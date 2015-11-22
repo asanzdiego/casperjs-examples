@@ -1,4 +1,5 @@
 var casper = require('casper').create({
+    waitTimeout: 10000,
     viewportSize: {
         width: 1024,
         height: 760
@@ -33,13 +34,18 @@ casper.waitUntilVisible('div.select-username p.isaok', function() {
 
 casper.then(function() {
 
-    //this.click('input#submit_button');
+    this.click('input#submit_button');
 });
 
 casper.waitForSelector('title', function() {
 
     this.echo(this.getHTML('title'));
     this.captureSelector('twitter-3.png', 'html');
+});
+
+casper.then(function() {
+
+    this.click('input#submit_button');
 });
 
 casper.run();

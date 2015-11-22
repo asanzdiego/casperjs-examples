@@ -1,7 +1,7 @@
-#DATE=`date +%Y%m%d`
-#USERNAME='t'$DATE
+DATE=`date +%Y%m%d`
+USERNAME='t'$DATE
 
-USERNAME='caspert3chfest'
+#USERNAME='caspert3chfest'
 
 echo $USERNAME
 
