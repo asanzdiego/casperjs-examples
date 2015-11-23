@@ -3,7 +3,7 @@
 ## Codemotion
 
 - Talk: <http://2015.codemotion.es/agenda.html#5699289732874240/45634007>
-- Slides:
+- Slides: -
 - Vídeo: -
 - Examples: <https://github.com/asanzdiego/casperjs-examples/tree/master/codemotion>
 
