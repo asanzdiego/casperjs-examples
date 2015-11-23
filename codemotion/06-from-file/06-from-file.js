@@ -13,7 +13,7 @@ var array = eval(data);
 casper.start('http://localhost:8080/', function() {
 
     this.echo(this.getHTML('title'));
-    this.captureSelector('06-files-html.png', 'html');
+    this.captureSelector('06-from-file.png', 'html');
 });
 
 array.forEach(function(text) {
@@ -37,7 +37,7 @@ array.forEach(function(text) {
           return document.querySelectorAll('p#messages br').length > 1;
       });
   }, function then() {
-      this.captureSelector('06-files-p.png', 'p#messages');
+      this.captureSelector('06-from-file.png', 'p#messages');
   });
 
 });
