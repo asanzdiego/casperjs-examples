@@ -7,7 +7,7 @@ var casper = require('casper').create({
 
 var fs = require('fs');
 var utils = require('utils');
-var data = fs.read('./06-files.json');
+var data = fs.read('./06-from-files.json');
 var array = eval(data);
 
 casper.start('http://localhost:8080/', function() {
